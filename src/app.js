@@ -12,12 +12,20 @@ function init() {
   //function crearMenu() {
   let num_ingreso = document.createElement("input");
   num_ingreso.style.alignContent = "center";
-  let val1 = document.querySelector("input");
-  //val1.setAttribute = ("value", "ingresa_num");
-  //num_ingreso.innerHTML;
   document.body.appendChild(num_ingreso);
-  //document.body.appendChild(val1);
-  console.log(num_ingreso);
+  let val1 = document.querySelector("input");
+  val1.setAttribute("value", "numero");
+  let paint = document.createElement("button");
+  paint.style.background = "grey";
+  paint.innerText = "Draw";
+  document.body.appendChild(paint);
+  let val2 = document.querySelector("button");
+  val2.setAttribute("value", "paint");
+  val2.setAttribute("class", "btn btn-secondary");
+
+  //num_ingreso.innerHTML;
+
+  console.log(num_ingreso, paint);
   //}
   // lienzo para desplegar las cartas
   //generarMixCards();
